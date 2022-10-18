@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>reservation details</title>
+	<link rel="stylesheet" type="text/css" href="reservation.css">
+</head>
+<body>
+	
+	
+	<div class="container">
+        <h1>Reservation</h1>
+		<form method="POST" action="booking.php" name="form" onsubmit="return validateForm()">
+		    <article>
+                <label for="email">Email:</label>
+                <input type="text" id="email1" name="email1" value="" required pattern="[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+.[a-z]{2,4}" title="Invalid Email">
+            </article>
+            <article>
+                <label for="city">City:</label>
+                <input type="text"  id="fcity" name="fcity" required>
+            </article>
+            <article>
+                <label for="phoneno">PhoneNo:</label>
+                <input type="phoneno" id="fphoneno" name="fphoneno" required>
+            </article>
+            <article class="places">
+                <article>
+                    <label id="source" for="source">Source:</label><br>
+                    <select class="dropdown">
+                    <option value = "">Select:</option>
+                    <option value = "Hyderabad"> Goa </option>
+                    <option value = "Kerela"> Kerela </option>
+                    <option value = "Rajasthan"> Rajasthan </option>
+                    <option value = "Jammu And Kashmir"> Jammu And Kashmir </option>
+                    <option value = "Andaman And Nicobar"> Andaman And Nicobar </option>
+                    </select>
+                </article>
+                <article>
+                    <label id="destination" for="destination">Destination:</label><br>
+                    <select class="dropdown">
+                        <option value="">Select:</option>
+                        <option value = "Goa"> Goa </option>
+                        <option value = "Kerela"> Kerela </option>
+                        <option value = "Rajasthan"> Rajasthan </option>
+                        <option value = "Jammu And Kashmir"> Jammu And Kashmir </option>
+                        <option value = "Andaman And Nicobar"> Andaman And Nicobar </option>
+                    </select>
+                </article>
+                
+            </article>
+            <article>
+                <label for="traveldate">Travel Date:</label>
+                <input type="date" id="ftraveldate"name="ftraveldate" required>
+            </article>
+            <article>
+                <label for="noofpeople">No. of People:</label>
+                <input type="text" id="fnoofpeople" name="fnoofpeople" required>
+            </article>
+            <article>
+                <label for="fname">Name-1:</label><br>
+                    <input type="text" id="fname" name="fname" required><br><br>
+                <label for="lname">Name-2:</label><br>
+                    <input type="text" id="lname" name="lname" required><br><br>
+                    <label for="fname">Name-3:</label><br>
+                    <input type="text" id="fname" name="fname" required><br><br>
+                <label for="lname">Name-4:</label><br>
+                    <input type="text" id="lname" name="lname" required><br><br>
+            </article>
+					
+        <div class="btn">
+			<input class="submit-button"name="submit" value="Submit" type="submit">
+		</div>
+		</form>
+	</div>
+</body>
+</html>
